@@ -1,11 +1,11 @@
 CoutUpCircle
 ============
 
-jQuery Plugin that counting up
+Light weight jQuery Plugin for counting up
 
 # How to use
 
-The number in the HTML-Elemnt have to stay alone without any unit. Appear the CoutUpCircle Plugin with the following JavaScript Code:
+The number in the HTML-Elemnt have to stay alone without any unit. Apply the CoutUpCircle Plugin with the following JavaScript Code:
 ```javascript
 $('element').CountUpCircle();
 ```
@@ -14,8 +14,10 @@ $('element').CountUpCircle();
 ```javascript
 $('#count-box').CountUpCircle({
   duration: 2000 /* Integer - Unit: Millisecounds; How long to Count; Default value: 5000  */,
-  opacity_anim: true /* Boolean; Raise the Opacity of the element from 0 to 100%; Default: false */
-  step_divider: 1 /* setp forward in bigger steps, for example for bigger numbers like >1000 */
+  opacity_anim: true /* Boolean; Raise the Opacity of the element from 0 to 100%; Default: false */,
+  step_divider: 1 /* setp forward in bigger steps, for example for bigger numbers like >1000 */,
+  prefix:""/*string to be prepended in front of number*/,
+  postfix:""/*string to be appended after the number*/
 });
 ```
 
@@ -31,7 +33,9 @@ This is a simple example, which is available in the demo folder.
 $('#count-box').CountUpCircle({
   duration: 2000,
   opacity_anim: true,
-  step_divider: 1
+  step_divider: 1,
+  prefix:"speed",
+  postfix:"KMPS"
 });
 ```
 
