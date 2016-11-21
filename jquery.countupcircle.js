@@ -42,7 +42,7 @@
 		
 		var set_endpoint = function (){
 			self.html(settings.prefix+toCount+settings.postfix);
-		}
+		};
 
 		displayNumber();
 	}
